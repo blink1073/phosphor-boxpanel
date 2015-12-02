@@ -1,0 +1,16 @@
+{
+  "name": "phosphor-boxpanel-example",
+  "private": true,
+  "dependencies": {
+    "phosphor-boxpanel": "file:..",
+    "system-css": "^0.1.0",
+    "systemjs": "^0.19.6"
+  },
+  "devDependencies": {
+    "rimraf": "^2.4.4"
+  },
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "tsc --project src"
+  }
+}

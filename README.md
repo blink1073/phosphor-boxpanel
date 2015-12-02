@@ -75,10 +75,12 @@ Build Example
 Follow the source build instructions first.
 
 ```bash
-npm run build:example
+cd example
+npm install
+npm run build
 ```
 
-Navigate to `example/index.html`.
+Start a web server in the `example` folder and navigate to the served URL.
 
 
 Supported Runtimes
@@ -90,17 +92,6 @@ Earlier versions may also work, but come with no guarantees.
 - IE 11+
 - Firefox 32+
 - Chrome 38+
-
-
-Bundle for the Browser
-----------------------
-
-Follow the package install instructions first.
-
-```bash
-npm install --save-dev browserify browserify-css
-browserify myapp.js -o mybundle.js
-```
 
 
 Usage Examples

@@ -1,20 +1,26 @@
 module.exports = function (config) {
   config.set({
-    browsers: ['Firefox'],
-    frameworks: ['browserify', 'mocha'],
+    basePath: '..',
+    frameworks: ['systemjs', 'mocha'],
     reporters: ['mocha', 'coverage'],
-    preprocessors: { 'build/index.js': ['browserify'] },
-    browserify: {
-      debug: true,
-      transform: ['browserify-css', 'browserify-istanbul']
+    files: ['test/build/index.js'],
+    preprocessors: {
+      'lib/*.js': ['coverage'],
     },
-    files: ['build/index.js'],
     coverageReporter: {
       reporters : [
         { 'type': 'text' },
-        { 'type': 'lcov', dir: 'coverage' },
-        { 'type': 'html', dir: 'coverage' }
+        { 'type': 'lcov', dir: 'test/coverage' },
+        { 'type': 'html', dir: 'test/coverage' }
       ]
+    },
+    systemjs: {
+      configFile: ['test/system.conf.js'],
+      serveFiles: [
+        'lib/*.*',
+        'node_modules/**/*.*',
+        'test/src/**/*.*'
+      ],
     },
     port: 9876,
     colors: true,

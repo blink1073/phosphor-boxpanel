@@ -1,10 +1,17 @@
 module.exports = function (config) {
   config.set({
-    frameworks: ['browserify', 'mocha'],
+    basePath: '..',
+    frameworks: ['systemjs', 'mocha'],
     reporters: ['mocha'],
-    preprocessors: { 'build/index.js': ['browserify'] },
-    browserify: { debug: true, transform: ['browserify-css'] },
-    files: ['build/index.js'],
+    files: ['test/build/index.js'],
+    systemjs: {
+      configFile: ['test/system.conf.js'],
+      serveFiles: [
+        'lib/*.*',
+        'node_modules/**/*.*',
+        'test/src/**/*.*'
+      ],
+    },
     port: 9876,
     colors: true,
     singleRun: true,

@@ -13,9 +13,9 @@ import {
 
 import {
   BoxPanel
-} from '../lib/index';
+} from 'phosphor-boxpanel';
 
-import './index.css';
+import '../index.css';
 
 
 function createContent(name: string): Widget {
@@ -58,4 +58,4 @@ function main(): void {
 }
 
 
-window.onload = main;
+main();
