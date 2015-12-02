@@ -4,6 +4,7 @@ sh -e /etc/init.d/xvfb start
 set -e
 npm run clean
 npm run build
+ls node_modules
 npm test
 npm run test:coverage
 npm run docs
