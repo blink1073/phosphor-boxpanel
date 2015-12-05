@@ -2,12 +2,11 @@
   "name": "phosphor-boxpanel-example",
   "private": true,
   "dependencies": {
-    "phosphor-boxpanel": "file:..",
-    "system-css": "^0.1.0",
-    "systemjs": "^0.19.6"
+    "phosphor-boxpanel": "file:.."
   },
   "devDependencies": {
-    "rimraf": "^2.4.4"
+    "rimraf": "^2.4.4",
+    "steal": "^0.12.7"
   },
   "scripts": {
     "clean": "rimraf build",
