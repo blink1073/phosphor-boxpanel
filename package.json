@@ -29,6 +29,7 @@
     "karma-mocha-reporter": "^1.1.1",
     "mocha": "^2.2.5",
     "rimraf": "^2.4.2",
+    "steal": "^0.12.7",
     "typedoc": "^0.3.11",
     "typescript": "^1.6.2"
   },
@@ -73,6 +74,10 @@
     "widget",
     "widgets"
   ],
+  "system": {
+    "npmIgnore": ["devDependencies"],
+    "npmDependencies": ["expect.js"]
+  },
   "author": "S. Chris Colbert <sccolbert@gmail.com>",
   "license": "BSD-3-Clause",
   "bugs": {
