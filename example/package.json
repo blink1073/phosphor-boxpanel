@@ -15,7 +15,7 @@
   "scripts": {
     "build": "tsc --project src",
     "clean": "rimraf build",
-    "serve": "http-server"
+    "serve": "http-server -c-1"
   },
   "system": {
     "npmIgnore": [
