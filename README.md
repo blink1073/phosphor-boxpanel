@@ -72,13 +72,13 @@ Navigate to `docs/index.html`.
 Build Example
 -------------
 
-Follow the source build instructions first.
-
 ```bash
-npm run build:example
+cd example
+npm install
+npm run build
 ```
 
-Navigate to `example/index.html`.
+Start a server and open in a browser.
 
 
 Supported Runtimes

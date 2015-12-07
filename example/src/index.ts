@@ -13,7 +13,7 @@ import {
 
 import {
   BoxPanel
-} from '../lib/index';
+} from 'phosphor-boxpanel';
 
 import './index.css';
 
@@ -58,4 +58,4 @@ function main(): void {
 }
 
 
-window.onload = main;
+main();

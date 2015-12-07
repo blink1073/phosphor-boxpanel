@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "boxpanel-example",
+  "version": "0.1.0",
+  "main": "index.js",
+  "dependencies": {
+    "phosphor-boxpanel": "file:..",
+    "steal": "^0.12.7"
+  },
+  "devDependencies": {
+    "rimraf": "^2.4.4",
+    "typescript": "^1.7.3"
+  },
+  "scripts": {
+    "build": "tsc --project src",
+    "clean": "rimraf build"
+  },
+  "system": {
+    "npmIgnore": [
+      "devDependencies"
+    ]
+  }
+}
