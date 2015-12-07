@@ -1,10 +1,5 @@
 window.__karma__.loaded = function() {
-  System.config({
-    paths: {
-        'test/build/*': 'test/build/*'
-    }
-  });
-  System.main = 'test/build/index.js';
+  System.main = 'test/build/index';
 
   steal.done().then(function(){
     if(window.__karma__) {
