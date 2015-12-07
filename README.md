@@ -76,9 +76,8 @@ Build Example
 cd example
 npm install
 npm run build
+npm run serve
 ```
-
-Start a server and open in a browser.
 
 
 Supported Runtimes
