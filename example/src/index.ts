@@ -15,8 +15,6 @@ import {
   BoxPanel
 } from 'phosphor-boxpanel';
 
-import './index.css';
-
 
 function createContent(name: string): Widget {
   let widget = new Widget();
