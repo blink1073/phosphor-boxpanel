@@ -7,7 +7,7 @@ module.exports = function (config) {
       { pattern: 'lib/*.*', included: false },
       { pattern: 'node_modules/steal/**/*.js', included: false },
       { pattern: 'package.json', included: false },
-      { pattern: 'node_modules/**/package.json', included: false},
+      { pattern: 'node_modules/**/package.json', included: false },
       { pattern: 'node_modules/**/*.js', included: false },
       { pattern: 'node_modules/**/*.css', included: false },
       { pattern: 'test/build/index.*', included: false },
