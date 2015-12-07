@@ -18,8 +18,8 @@ module.exports = function (config) {
     coverageReporter: {
       reporters : [
         { 'type': 'text' },
-        { 'type': 'lcov', dir: 'coverage' },
-        { 'type': 'html', dir: 'coverage' }
+        { 'type': 'lcov', dir: 'test/coverage' },
+        { 'type': 'html', dir: 'test/coverage' }
       ]
     },
     port: 9876,
