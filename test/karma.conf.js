@@ -8,7 +8,6 @@ module.exports = function (config) {
       { pattern: 'package.json', included: false },
       { pattern: 'node_modules/**/*.*', included: false },
       { pattern: 'test/build/index.*', included: false },
-      { pattern: 'test/build/index.*', included: false },
       'node_modules/steal/steal.js',
       'test/karma.bootstrap.js'
     ],
