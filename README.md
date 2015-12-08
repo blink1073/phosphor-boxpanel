@@ -72,10 +72,11 @@ Navigate to `docs/index.html`.
 Build Example
 -------------
 
+Follow the source build instructions first.
+
 ```bash
 cd example
 npm install
-npm run build
 npm run serve
 ```
 
