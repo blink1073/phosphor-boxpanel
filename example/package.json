@@ -17,7 +17,8 @@
     "clean": "rimraf build",
     "postinstall": "npm dedupe",
     "prepublish": "npm run build",
-    "serve": "http-server -c-1"
+    "serve": "http-server -c-1",
+    "update": "npm install --force phosphor-boxpanel"
   },
   "system": {
     "npmIgnore": [
