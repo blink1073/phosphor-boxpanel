@@ -1,17 +1,13 @@
 var path = require('path');
 
 module.exports = {
-  entry: './test/src/index.ts',
+  entry: './test/build/index.js',
   output: {
     filename: './test/build/coverage.js'
-  },
-  resolve: {
-    extensions: ['', '.ts', '.js']
   },
   bail: true,
   module: {
     loaders: [
-      { test: /\.ts$/, loader: 'ts-loader' },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
     ],
     preLoaders: [

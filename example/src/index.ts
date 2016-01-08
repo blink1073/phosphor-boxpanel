@@ -13,9 +13,9 @@ import {
 
 import {
   BoxPanel
-} from '../lib/index';
+} from '../../lib/index';
 
-import './index.css';
+import '../index.css';
 
 
 function createContent(name: string): Widget {
