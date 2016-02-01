@@ -3,7 +3,9 @@
   "name": "phosphor-boxpanel-example",
   "dependencies": {
     "phosphor-boxpanel": "file:..",
-    "phosphor-widget": "^1.0.0-rc.1",
-    "postinstall": "npm dedupe",
+    "phosphor-widget": "^1.0.0-rc.1"
+  },
+  "scripts": {
+    "postinstall": "npm dedupe"
   }
 }
