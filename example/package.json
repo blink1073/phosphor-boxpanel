@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "phosphor-boxpanel-example",
+  "dependencies": {
+    "phosphor-boxpanel": "file:..",
+    "phosphor-widget": "^1.0.0-rc.1"
+  }
+}
