@@ -35,8 +35,8 @@
   },
   "scripts": {
     "clean": "rimraf lib && rimraf test/build && rimraf test/coverage",
-    "clean:example": "rimraf example/build && rimraf example/node_modules/phosphor-boxpanel",
-    "build:example": "cd example && npm install && tsc --project src && webpack --config ./webpack.conf.js",
+    "clean:example": "rimraf example/build",
+    "build:example": "cd example && rimraf node_modules/phosphor-boxpanel && npm install && tsc --project src && webpack --config webpack.conf.js",
     "build:src": "tsc --project src",
     "build:test": "tsc --project test/src && webpack --config test/webpack.conf.js",
     "build": "npm run build:src && npm run build:test",
